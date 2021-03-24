@@ -1,0 +1,127 @@
+body {
+  background-color: #e5e5e5;
+}
+
+input {
+  border-radius: 3px;
+  background: #fafafa;
+  height: 28px;
+  width: 215px;
+  border: 1px solid #dbdbdb;
+  color: #979797;
+  display: flex;
+  justify-content: center;
+}
+
+.topMenu {
+  width: 100%;
+  height: 54px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.menuOptions {
+  width: 935px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 19.25px;
+}
+
+.menuOptions img {
+  height: 29px;
+}
+
+.iconAndLogo {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  margin: 0 10px;
+  width: 1px;
+  height: 22px;
+  background: #dbdbdb;
+}
+
+.mobileShow {
+  display: none;
+}
+
+.menuCenter {
+  display: flex;
+  align-items: center;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+}
+
+.iconGroup ion-icon {
+  margin-left: 10px;
+}
+
+.line {
+  margin-top: 54px;
+  height: 1px;
+  width: 100%;
+  background: #dbdbdb;
+}
+
+.content {
+  width: 935px;
+  height: 50px;
+  margin: 33px auto 0 auto;
+  background: purple;
+}
+
+@media (max-width: 935px) {
+  .menuOptions {
+    width: 100%;
+  }
+
+  .iconAndLogo {
+    margin-left: 10px;
+  }
+
+  .iconGroup {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 614px) {
+  .mobileHide {
+    display: none;
+  }
+
+  .mobileShow {
+    display: initial;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
