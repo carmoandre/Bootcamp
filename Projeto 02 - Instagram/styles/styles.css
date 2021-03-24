@@ -1,5 +1,6 @@
 body {
   background-color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
 }
 
 input {
@@ -24,20 +25,28 @@ input {
 
 ::-webkit-input-placeholder {
   text-align: center;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
   text-align: center;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   text-align: center;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 :-ms-input-placeholder {
   text-align: center;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .menuOptions {
@@ -93,9 +102,142 @@ input {
 
 .content {
   width: 935px;
-  height: 50px;
   margin: 33px auto 0 auto;
-  background: purple;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed {
+  background: blue;
+  width: 614px;
+  height: 1000px; /*Temporária*/
+}
+
+.stories {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  height: 118px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.stories img {
+  background-image: url("src/images/stories_background.jpg");
+  width: 56px;
+  border-radius: 50%;
+  /*
+  height: 0;
+  width: 0;
+  padding: 35px 120px; // adjust that depend on your image size
+  background-image: url('YOUR_IMAGE_PATH');
+  background-repeat: no-repeat;
+    */
+}
+
+.sidebar {
+  width: 293px;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 23px;
+}
+
+.profileInfo img {
+  border-radius: 50%;
+  width: 56px;
+  margin-right: 17px;
+}
+
+.myProfile {
+  display: flex;
+  align-items: center;
+}
+
+.myProfileText p:first-child {
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+  line-height: 16.41px;
+}
+
+.myProfileText p:last-child {
+  font-weight: 300;
+  font-size: 14px;
+  color: #8e8e8e;
+  line-height: 16.41px;
+}
+
+.suggestions > p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12.89px;
+  color: #c7c7c7;
+  margin-top: 33px;
+}
+
+.suggestions > p:last-child {
+  margin-top: 18px;
+}
+
+.sugTitle {
+  margin-top: 24px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sugTitle p:first-child {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sugTitle p:last-child {
+  color: #262626;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sugProfiles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.sugProfiles img {
+  width: 32px;
+  margin: 0px;
+}
+
+.profileText {
+  width: 203px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profileText p:first-child {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profileText p:last-child {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.seguir {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #139ef2;
 }
 
 @media (max-width: 935px) {
@@ -110,6 +252,15 @@ input {
   .iconGroup {
     margin-right: 10px;
   }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 614px) {
@@ -121,7 +272,7 @@ input {
     display: initial;
   }
 
-  .content {
+  .feed {
     width: 100%;
   }
 }
