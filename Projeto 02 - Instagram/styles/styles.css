@@ -190,6 +190,12 @@ input {
   object-fit: cover;
 }
 
+.post video {
+  width: 100%;
+  height: 657px;
+  object-fit: cover;
+}
+
 .postHeader {
   width: 100%;
   height: 61px;
