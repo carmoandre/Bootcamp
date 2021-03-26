@@ -9,6 +9,7 @@ input {
   background: #fafafa;
   height: 28px;
   width: 215px;
+  box-sizing: border-box;
   border: 1px solid #dbdbdb;
   color: #979797;
   display: flex;
@@ -92,7 +93,7 @@ input {
 }
 
 .iconGroup ion-icon {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .line {
@@ -111,7 +112,6 @@ input {
 
 .feed {
   width: 614px;
-  height: 1000px; /*Temporária*/
 }
 
 .stories {
@@ -234,6 +234,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-bottom: 8px;
 }
 
 .postOptions {
@@ -244,11 +245,11 @@ input {
 }
 
 .postOptions ion-icon {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .postOptions div:last-child {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .postFooter img {
@@ -275,6 +276,11 @@ input {
 
 .sidebar {
   width: 293px;
+}
+
+.floating {
+  width: 293px;
+  position: fixed;
 }
 
 .profileInfo {
